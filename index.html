@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAR-OMEGA ULTIMATE | Unisoc Web Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="omega-container">
+        <header>
+            <h1 class="glitch">GAR-OMEGA ULTIMATE</h1>
+            <div id="status-bar" class="status">MODE: AWAITING BROM CONNECTION</div>
+        </header>
+
+        <div class="control-grid">
+            <div class="panel">
+                <h3>🛠️ ABSOLUTE EXPLOIT CHAIN (BROM)</h3>
+                <div class="input-group">
+                    <label>1. FDL1 / BOOTLOADER</label>
+                    <input type="file" id="fdl1-file">
+                </div>
+                <div class="input-group">
+                    <label>2. PAYLOAD (CUSTOM EXEC .BIN)</label>
+                    <input type="file" id="payload-file">
+                </div>
+                <div class="input-group">
+                    <label>3. FDL2 / RAM LOADER</label>
+                    <input type="file" id="fdl2-file">
+                </div>
+                <p class="hint">Upload the custom_exec binary for signature bypass.</p>
+            </div>
+
+            <div class="panel">
+                <h3>⚡ POWER ACTIONS</h3>
+                <div class="btn-grid">
+                    <button id="btn-connect" class="btn-primary">🔌 CONNECT DEVICE</button>
+                    <button id="btn-cve" class="btn-exploit">🚀 EXECUTE CVE EXPLOIT</button>
+                    <button id="id-frp" class="btn-info">✨ ERASE FRP</button>
+                    <button id="id-ubl" class="btn-danger">🔓 FORCE UBL</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="console">
+            <div class="terminal-header">SYSTEM CORE LOGS</div>
+            <div id="terminal" class="terminal-body">> Ready. Power off device, hold boot keys, and connect...</div>
+        </div>
+
+        <footer>
+            <p>Developed by CarlTweaks | Exploit by TomKing062</p>
+        </footer>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

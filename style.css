@@ -1,0 +1,91 @@
+:root {
+    --neon-blue: #00f3ff;
+    --neon-purple: #bc13fe;
+    --neon-red: #ff003c;
+    --neon-green: #05ffa1;
+    --dark-bg: #050505;
+}
+
+body {
+    background-color: var(--dark-bg);
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.omega-container {
+    width: 100%;
+    max-width: 700px;
+    background: rgba(15, 15, 25, 0.95);
+    border: 1px solid var(--neon-blue);
+    padding: 20px;
+    box-shadow: 0 0 30px rgba(0, 243, 255, 0.15);
+}
+
+.glitch {
+    text-align: center;
+    color: var(--neon-blue);
+    text-shadow: 2px 2px var(--neon-purple);
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+}
+
+.status {
+    text-align: center;
+    font-size: 10px;
+    color: #888;
+    margin-bottom: 20px;
+}
+
+.panel {
+    border: 1px solid #222;
+    padding: 15px;
+    margin-bottom: 15px;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+h3 { color: var(--neon-purple); font-size: 11px; margin-bottom: 15px; text-transform: uppercase; }
+
+.input-group { margin-bottom: 10px; }
+.input-group label { display: block; font-size: 9px; color: var(--neon-blue); margin-bottom: 3px; }
+input[type="file"] { font-size: 10px; color: #aaa; width: 100%; }
+
+.btn-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+
+button {
+    background: transparent;
+    border: 1px solid var(--neon-blue);
+    color: var(--neon-blue);
+    padding: 12px 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 11px;
+    transition: 0.3s;
+}
+
+button:hover { background: var(--neon-blue); color: #000; box-shadow: 0 0 15px var(--neon-blue); }
+
+/* GLOW FIX */
+.glow-active {
+    box-shadow: 0 0 20px var(--neon-green) !important;
+    border-color: var(--neon-green) !important;
+    color: var(--neon-green) !important;
+}
+
+.console {
+    background: #000;
+    height: 180px;
+    overflow-y: auto;
+    padding: 10px;
+    border: 1px solid #1a1a1a;
+    font-family: 'Courier New', monospace;
+}
+
+.terminal-body { color: #00ff41; font-size: 11px; line-height: 1.4; }
+.err { color: var(--neon-red); }
+.success { color: var(--neon-green); }
+.hint { font-size: 9px; color: #555; margin-top: 5px; }
+
+footer { text-align: center; font-size: 9px; color: #444; margin-top: 15px; }
