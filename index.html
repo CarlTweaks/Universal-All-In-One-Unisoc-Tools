@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAR-OMEGA ULTIMATE | All-In-One Unisoc</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="omega-container">
+        <header>
+            <h1 class="glitch" data-text="GAR-OMEGA">Universal Unisoc All In One Tool</h1>
+            <div id="status-bar" class="status">DEVICE DISCONNECTED</div>
+        </header>
+
+        <div class="control-grid">
+            <div class="panel">
+                <h3>🛠️ MANUAL BINARY CHAIN</h3>
+                <div class="input-group">
+                    <label>FDL1 / EXPLOIT BASE</label>
+                    <input type="file" id="fdl1-file">
+                </div>
+                <div class="input-group">
+                    <label>FDL2 / RAM LOADER</label>
+                    <input type="file" id="fdl2-file">
+                </div>
+                <p class="hint">Upload manual FDLs for specific models.</p>
+            </div>
+
+            <div class="panel">
+                <h3>⚡ POWER ACTIONS</h3>
+                <div class="btn-grid">
+                    <button id="btn-connect" class="btn-primary">1. CONNECT DEVICE</button>
+                    <button id="btn-cve" class="btn-exploit">🚀 CVE-2022-38694 UNLOCK</button>
+                    <button id="btn-frp" class="btn-info">ERASE FRP (WIPE)</button>
+                    <button id="btn-ubl" class="btn-danger">FORCE BOOTLOADER UNLOCK</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="console">
+            <div class="terminal-header">SYSTEM CORE LOGS</div>
+            <div id="terminal" class="terminal-body">> Ready. Connect device in BROM mode...</div>
+        </div>
+
+        <footer>
+            <p>Developed by CarlTweaks | Exploit by TomKing062</p>
+        </footer>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
