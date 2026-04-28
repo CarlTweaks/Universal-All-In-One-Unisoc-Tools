@@ -1,0 +1,136 @@
+/* --- GAR-UNLOCKER OMEGA CYBER-THEME --- */
+
+:root {
+    --neon-blue: #00f3ff;
+    --neon-purple: #bc13fe;
+    --neon-red: #ff003c;
+    --neon-green: #05ffa1;
+    --dark-bg: #0a0a0f;
+    --glass-bg: rgba(20, 20, 30, 0.8);
+}
+
+body {
+    background-color: var(--dark-bg);
+    color: white;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* Background Effect */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: linear-gradient(to bottom, transparent, rgba(0, 243, 255, 0.05));
+    pointer-events: none;
+    z-index: -1;
+}
+
+.omega-container {
+    width: 90%;
+    max-width: 1000px;
+    background: var(--glass-bg);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+}
+
+h1.glitch {
+    font-size: 2.5rem;
+    text-align: center;
+    color: var(--neon-blue);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-shadow: 2px 2px var(--neon-purple);
+    margin-bottom: 20px;
+}
+
+/* Panel Design */
+.panel {
+    background: rgba(0, 0, 0, 0.3);
+    border-left: 4px solid var(--neon-blue);
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+h3 {
+    margin-top: 0;
+    font-size: 0.9rem;
+    color: var(--neon-purple);
+    letter-spacing: 2px;
+}
+
+/* Button Grid */
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+}
+
+button {
+    background: transparent;
+    border: 1px solid var(--neon-blue);
+    color: var(--neon-blue);
+    padding: 12px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s;
+    border-radius: 3px;
+}
+
+button:hover {
+    background: var(--neon-blue);
+    color: black;
+    box-shadow: 0 0 15px var(--neon-blue);
+}
+
+.btn-danger { border-color: var(--neon-red); color: var(--neon-red); }
+.btn-danger:hover { background: var(--neon-red); color: white; box-shadow: 0 0 15px var(--neon-red); }
+
+.btn-exploit {
+    border-color: var(--neon-green);
+    color: var(--neon-green);
+    grid-column: span 2; /* Mas malaki para standout */
+    font-size: 1.1rem;
+}
+
+/* Terminal Style */
+.console {
+    background: #000;
+    border: 1px solid #333;
+    height: 250px;
+    border-radius: 5px;
+    overflow-y: auto;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 15px;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.terminal-body {
+    color: #00ff41; /* Matrix Green */
+}
+
+/* Status Indicator */
+.status {
+    text-align: center;
+    font-size: 0.8rem;
+    margin-bottom: 15px;
+    color: #888;
+}
+
+/* Responsive for Mobile */
+@media (max-width: 600px) {
+    .btn-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}

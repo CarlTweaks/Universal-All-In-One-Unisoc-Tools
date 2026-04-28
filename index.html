@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAR-OMEGA ULTIMATE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="omega-container">
+        <h1 class="glitch">GAR-OMEGA ULTIMATE</h1>
+        
+        <div class="panel">
+            <h3>📂 FIRMWARE LOADER (.PAC)</h3>
+            <input type="file" id="pac-input" accept=".pac">
+            <div class="manual-box">
+                <input type="file" id="fdl1" placeholder="FDL1">
+                <input type="file" id="fdl2" placeholder="FDL2">
+            </div>
+        </div>
+
+        <div class="panel">
+            <h3>⚡ POWER TOOLS & EXPLOITS</h3>
+            <div class="btn-grid">
+                <button id="btn-connect" class="btn-primary">CONNECT DEVICE</button>
+                <button id="btn-cve" class="btn-exploit">🔥 CVE-2022-38694 UNLOCK</button>
+                <button id="btn-frp" class="btn-info">ERASE FRP</button>
+                <button id="btn-fastboot" class="btn-warn">FASTBOOT UNLOCK</button>
+            </div>
+        </div>
+
+        <div class="console">
+            <div id="terminal" class="terminal-body">> System Ready...</div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
