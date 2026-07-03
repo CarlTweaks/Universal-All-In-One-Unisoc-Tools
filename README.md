@@ -5,7 +5,7 @@ Isang browser-based tool na binuo para sa Unisoc (Spreadtrum) community. No inst
 
 ---
 
-## 🌐 [CLICK HERE TO OPEN THE TOOL](https://carltweaks.github.io/Universal-All-In-One-Unisoc-Tools/)
+## 🌐 [CLICK HERE TO OPEN THE TOOL](https://carltible12.github.io/Universal-All-In-One-Unisoc-Tools/)
 > **⚠️ MAHALAGA:** Gamitin lamang ang **Google Chrome** (Android o PC). Hindi gagana ang USB connection sa loob ng Facebook, Messenger, o Lite browsers.
 
 ---
